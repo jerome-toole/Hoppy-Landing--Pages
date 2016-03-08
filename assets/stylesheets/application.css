@@ -550,6 +550,24 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+div.splash {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -8em; }
+  @media screen and (min-width: 53.75em) {
+    div.splash {
+      margin-bottom: -4em; } }
+  div.splash:after {
+    content: "";
+    display: block; }
+
+footer, div.splash:after {
+  height: 8em; }
+  @media screen and (min-width: 53.75em) {
+    footer, div.splash:after {
+      height: 4em; } }
+
 footer {
   background: #ddd;
   padding: 1.5em;
@@ -559,14 +577,14 @@ footer {
     clear: both;
     content: "";
     display: table; }
-  footer .footer-logo {
+  footer .footer-links {
     margin-right: 1em;
     margin-bottom: 1em; }
     @media screen and (min-width: 53.75em) {
-      footer .footer-logo {
+      footer .footer-links {
         float: left;
         margin-bottom: 0; } }
-  footer .footer-logo img {
+  footer .footer-links img {
     height: 1.6em; }
   footer ul {
     line-height: 1.5em;

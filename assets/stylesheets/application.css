@@ -550,6 +550,13 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+body, html {
+  height: 100%; }
+
+body {
+  background-color: white;
+  color: #333; }
+
 div.splash {
   min-height: 100%;
   height: auto !important;
@@ -634,13 +641,6 @@ footer {
       footer .footer-secondary-links ul.footer-social img:focus, footer .footer-secondary-links ul.footer-social img:hover {
         opacity: 1; }
 
-body, html {
-  height: 100%; }
-
-body {
-  background-color: white;
-  color: #333; }
-
 .splash {
   display: block;
   text-align: center;
@@ -663,8 +663,8 @@ body {
   .splash img {
     display: block;
     width: 100%;
-    max-width: 44em;
-    margin: auto;
+    max-width: 34em;
+    margin: 0 auto 1.5em;
     height: auto; }
   .splash h1 {
     font-size: 1.5em;
@@ -675,7 +675,6 @@ body {
     line-height: 1;
     color: #1C4577; }
   .splash p {
-    color: #9DA7C3;
     font-size: 1.1em;
     line-height: 1.2; }
   @media screen and (min-width: 33.125em) {

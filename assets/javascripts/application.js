@@ -1,11 +1,31 @@
+$(".reveal-button").click(function(e) {
+    e.preventDefault();
+    if ( $(this).nextAll('.reveal').length ) {
+      $(this).nextAll('.reveal').first().toggle();
+      $(this).nextAll('.reveal').first().toggleClass('vhs-fade');
+      $(this).toggleClass('active');
+    } else {
+        console.log('length not');
+        $(this).parent().nextAll('.reveal').first().toggle();
+        $(this).parent().nextAll('.reveal').first().toggleClass('vhs-fade');
+        $(this).toggleClass('active');
+    }
+});
 
-/*
-Include your files here
- */
+$(function() {
+  $("#modal-1").on("change", function() {
+    if ($(this).is(":checked")) {
+      $("body").addClass("modal-open");
+    } else {
+      $("body").removeClass("modal-open");
+    }
+  });
 
-(function() {
+  $(".modal-fade-screen, .modal-close").on("click", function() {
+    $(".modal-state:checked").prop("checked", false).change();
+  });
 
-
-}).call(this);
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcGxpY2F0aW9uLmNvZmZlZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7Ozs7QUFBQTs7QUFBQSIsImZpbGUiOiJhcHBsaWNhdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyIsInNvdXJjZXNDb250ZW50IjpbIiMjI1xuSW5jbHVkZSB5b3VyIGZpbGVzIGhlcmVcbiMjI1xuXG4jPSByZXF1aXJlIGZpbGVuYW1lLmNvZmZlZVxuIl19
+  $(".modal-inner").on("click", function(e) {
+    e.stopPropagation();
+  });
+});

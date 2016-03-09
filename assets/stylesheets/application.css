@@ -676,18 +676,17 @@ footer {
   background: #ddd;
   padding: 1.5em;
   width: 100%;
-  height: 8em;
+  height: 4em;
   display: block; }
   @media screen and (min-width: 53.75em) {
     footer {
-      height: 5em; } }
+      height: 4em; } }
   footer::after {
     clear: both;
     content: "";
     display: table; }
   footer .footer-links {
-    margin-right: 1em;
-    margin-bottom: 1em; }
+    margin-right: 1em; }
     @media screen and (min-width: 53.75em) {
       footer .footer-links {
         float: left;
@@ -696,7 +695,7 @@ footer {
     height: 1.6em; }
   footer ul {
     line-height: 1.5em;
-    margin: 0 0 1em 0;
+    margin: 0;
     padding: 0; }
     @media screen and (min-width: 53.75em) {
       footer ul {
@@ -751,26 +750,26 @@ footer {
 .splash {
   display: block;
   text-align: center;
-  padding: 5% .5em .5em;
+  padding: 3% .5em .5em;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto;
-  margin-bottom: -8em; }
+  margin-bottom: -4em; }
   .splash::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (min-width: 53.75em) {
     .splash {
-      margin-bottom: -5em; } }
+      margin-bottom: -4em; } }
   .splash:after {
     content: "";
     display: block;
-    height: 8em; }
+    height: 4em; }
     @media screen and (min-width: 53.75em) {
       .splash:after {
-        height: 5em; } }
+        height: 4em; } }
   .splash .container {
     display: block; }
   .splash .container.text {
